@@ -54,7 +54,7 @@ def index():
     This is just an example handler that demonstrates the basics of SQLAlchemy,
     relationships, and template rendering in Flask.
 
-    """ 
+    """
     # Just for demonstration purposes
     for user in User.query:  #
         print 'User %d, username %s' % (user.id, user.username)
@@ -116,7 +116,8 @@ def fb_webhook():
             requests.post(request_url,
                           headers={'Content-Type': 'application/json'},
                           json={'recipient': {'id': sender_id},
-                                'message': {'text': message_text}})
+                                # 'message': {'text': message_text}})
+                                'message': {'text': "monkey!"}})
 
     # Return an empty response.
     return ''
