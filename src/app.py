@@ -117,7 +117,7 @@ def fb_webhook():
                           headers={'Content-Type': 'application/json'},
                           json={'recipient': {'id': sender_id},
                                 # 'message': {'text': message_text}})
-                                'message': {'text': "monkey!"}})
+                                'message': {'text': "monkey!" + message_text}})
 
     # Return an empty response.
     return ''
