@@ -54,7 +54,7 @@ def index():
     This is just an example handler that demonstrates the basics of SQLAlchemy,
     relationships, and template rendering in Flask.
 
-    """
+    """ 
     # Just for demonstration purposes
     for user in User.query:  #
         print 'User %d, username %s' % (user.id, user.username)
